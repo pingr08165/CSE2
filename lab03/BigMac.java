@@ -1,6 +1,6 @@
 // Ben Pingrey
 // CSE 02
-// Lab03--A lab to recieve input from the user about Big Mac prices,quantities, and tax and output the total cost
+// Lab03--A lab to recieve input from the user about Big Mac prices, quantities, and tax and output the total cost
 
 
 // Import scanner class
@@ -34,7 +34,7 @@ public class BigMac{
         totalCost = nBigMacs*bigMacPrice*(1+(salesTax/100));
         
         // Output results, using printf to modify the number of decimal places displayed
-        // It should be noted that the result is displayed rounded up to the nearest cent, as opposed truncated.
+        // It should be noted that the result is displayed rounded up to the nearest cent, as opposed to truncated.
         System.out.printf("The total cost of %d Big Macs, at $%.2f each, with a sales tax of %.1f%c, is $%.2f%n", nBigMacs, bigMacPrice, salesTax, '%', totalCost);
         
         
