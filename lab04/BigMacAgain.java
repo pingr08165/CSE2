@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 // Create class
 public class BigMacAgain{
+    // Create main method
     public static void main(String[] args){
         // Make scanner
         Scanner myScanner = new Scanner(System.in);
@@ -25,7 +26,7 @@ public class BigMacAgain{
         if (myScanner.hasNextInt()){
             nBigMacs = myScanner.nextInt();
             if (nBigMacs < 0){
-                System.out.println("The value you entered was invalid. Please try again and input a positive integer.");
+                System.out.println("The value you entered was invalid. Please try again and input a positive integer."); // Give an error message to negative input
                 return; // Terminates program
             }// end of nested if statement
         } // End of if statement
