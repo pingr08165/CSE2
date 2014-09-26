@@ -19,7 +19,7 @@ public class RandomGames{
         int crapsNumber1;       // First number between 1 and 6
         int crapsNumber2;       // Second number between 1 and 6
         int cardNum;            // Card number for pick a card (1-13)
-        String cardSuit = "";        // Card suit for pick a card
+        String cardSuit = "";   // Card suit for pick a card
         
         // Get input on game choice
         System.out.print("Enter R or r for Roulette, C or c for craps, P or p for pick a card: ");
@@ -57,7 +57,7 @@ public class RandomGames{
         // Pick a card code
         if(game.equals("P") || game.equals("p")){
             // Pick a pseudorandom suit (1-4)
-            switch ((int)Math.ceil(Math.random()*4)){
+            switch ((int)(Math.random()*4+1)){
                 case 1: cardSuit = "Hearts";
                         break;
                 case 2: cardSuit = "Diamonds";
@@ -67,7 +67,7 @@ public class RandomGames{
                 case 4: cardSuit = "Spades";
             } // End of suit switch
             // Pick a card number (1-13)
-            cardNum = (int)Math.ceil(Math.random()*13);
+            cardNum = (int)(Math.random()*13+1);
             // Output results
             switch (cardNum){
                 case 1: System.out.printf("Your card is: Ace of %s%n", cardSuit);
