@@ -34,6 +34,7 @@ public class LoopTheLoop{
                     System.out.print("Enter an int in the range [1,15]: ");
                 } // End of nested while
                 nLines = myScanner.nextInt();
+                myScanner.nextLine();
             } // End of outer while
             
             
@@ -60,7 +61,7 @@ public class LoopTheLoop{
             
             // Conditional break by user
             System.out.print("Do you want to continue? (Y/y to continue): ");
-            breaker = myScanner.next();
+            breaker = myScanner.nextLine();
             
             if(!breaker.equals("Y") && !breaker.equals("y")){
                 break;                
