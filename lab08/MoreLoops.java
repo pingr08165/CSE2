@@ -59,6 +59,7 @@ public class MoreLoops {
         k++;
         while(k < 4){
             System.out.println("k=" + 4);
+            k++;
         }
 
         int count = 0;
