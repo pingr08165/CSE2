@@ -45,7 +45,7 @@ public class Methods {
     
     // ascending--method to return true if 3 ints are entered in ascending order, else return false
     public static boolean ascending(int a, int b, int c){
-        if(a < b && b < c){return true;}
+        if(a <= b && b <= c){return true;}
         else{return false;}
     } // End of ascending
 }
