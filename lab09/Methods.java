@@ -30,7 +30,7 @@ public class Methods {
         System.out.print("Enter an int: ");
         while(!myScanner.hasNextInt()){
             myScanner.nextLine(); // Clear junk input
-            System.out.print("Enter an int: ");
+            System.out.print("Invalid entry. Try again: ");
         }
         int num = myScanner.nextInt();
         myScanner.nextLine();   // Clear junk input
